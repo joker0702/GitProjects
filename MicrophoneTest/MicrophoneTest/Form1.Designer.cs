@@ -1,4 +1,4 @@
-﻿namespace DeadPixelDetection
+﻿namespace MicrophoneTest
 {
     partial class Form1
     {
@@ -29,33 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.changeColor = new System.Windows.Forms.Timer(this.components);
-            this.SuspendLayout();
-            // 
-            // changeColor
-            // 
-            this.changeColor.Interval = 10;
-            this.changeColor.Tick += new System.EventHandler(this.changeColor_Tick);
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(284, 262);
-            this.DoubleBuffered = true;
-            this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form2_MouseDown);
-            this.ResumeLayout(false);
-
         }
 
         #endregion
-
-        private System.Windows.Forms.Timer changeColor;
     }
 }
 
