@@ -20,9 +20,30 @@ namespace PixelArts
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        private ImageSize _imageSize;
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        public ImageSize ImagsSize
+        {
+            get
+            {
+                return _imageSize;
+            }
+            set
+            {
+                _imageSize = value;
+            }
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            WindowNew windowNew = new WindowNew();
+            windowNew.Show();
         }
     }
 }

@@ -6,14 +6,23 @@
         xmlns:local="clr-namespace:PixelArts"
         mc:Ignorable="d"
         Title="Pixel Arts" Height="350" Width="525" WindowState="Maximized">
-    <Menu x:Name="menu" Height="21" VerticalAlignment="Top">
-        <MenuItem Header="_File">
-            <MenuItem Header="New" HorizontalAlignment="Left" Width="140"/>
-            <MenuItem Header="Load" HorizontalAlignment="Left" Width="140"/>
-            <MenuItem Header="Save" HorizontalAlignment="Left" Width="140"/>
-            <MenuItem Header="Save As" HorizontalAlignment="Left" Width="140"/>
-            <MenuItem Header="Close" HorizontalAlignment="Left" Width="140"/>
-        </MenuItem>
-        <MenuItem Header="_Edit"/>
-    </Menu>
+    <Grid>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="517">
+            <MenuItem Header="File">
+                <MenuItem Header="New" HorizontalAlignment="Left" Width="140" Click="MenuItem_Click"/>
+                <MenuItem Header="Save" HorizontalAlignment="Left" Width="140"/>
+                <MenuItem Header="Save As" HorizontalAlignment="Left" Width="140"/>
+                <MenuItem Header="Close" HorizontalAlignment="Left" Width="140"/>
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Header="Undo" HorizontalAlignment="Left" Width="140"/>
+                <MenuItem Header="Redo" HorizontalAlignment="Left" Width="140"/>
+                <MenuItem Header="Cut" HorizontalAlignment="Left" Width="140"/>
+                <MenuItem Header="Copy" HorizontalAlignment="Left" Width="140"/>
+                <MenuItem Header="Paste" HorizontalAlignment="Left" Width="140"/>
+                <MenuItem Header="Delete" HorizontalAlignment="Left" Width="140"/>
+            </MenuItem>
+        </Menu>
+
+    </Grid>
 </Window>
